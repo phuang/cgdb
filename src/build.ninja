@@ -1,0 +1,17 @@
+cflags = -Wall -Werror
+cxxflags = $cflags
+
+rule cc
+  command = gcc $cflags -c $in -o $out
+
+rule cxx
+  command = g++ $cxxflags -c $in -o $out
+
+rule link
+  command = g++ $in -o $out
+
+build cgdb: link main.o main_loop.o
+
+build main.o: cxx main.cc
+
+build main_loop.o: cxx main_loop.cc
