@@ -1,10 +1,10 @@
 #include <sys/epoll.h>
 #include <unistd.h>
 
-#include <iostream>
-
+#include "main_loop.h"
 
 int main() {
-    int fd = epoll_create(0);
-    close(fd);
+  MainLoop loop;
+
+  loop.Run();
 }
