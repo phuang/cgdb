@@ -1,5 +1,5 @@
 cflags = -Wall -Werror
-cxxflags = $cflags
+cxxflags = $cflags -std=c++11
 
 includes = -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include
 libs = -lgobject-2.0 -lglib-2.0 
