@@ -1,6 +1,6 @@
 #!/bin/sh
 
-GYP_GENERATORS=ninja gyp \
+GYP_GENERATORS=ninja gyp/gyp \
   --toplevel-dir=. \
   --depth=. \
   --include=build/common.gypi \
