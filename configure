@@ -1,3 +1,3 @@
 #!/bin/sh
 
-GYP_GENERATORS=ninja gyp
+GYP_GENERATORS=ninja gyp --toplevel-dir=. --depth=. cgdb/cgdb.gyp $*
