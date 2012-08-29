@@ -1,5 +1,5 @@
-#ifndef SOURCE_H
-#define SOURCE_H
+#ifndef CGDB_SOURCE_H
+#define CGDB_SOURCE_H
 
 class Source {
  public:

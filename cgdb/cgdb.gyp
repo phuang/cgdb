@@ -37,6 +37,8 @@
         'main.cc',
         'main_loop.cc',
         'main_loop.h',
+        'process.cc',
+        'process.h',
         'source.h',
       ],
       'conditions': [

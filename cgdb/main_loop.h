@@ -1,5 +1,5 @@
-#ifndef MAIN_LOOP_H
-#define MAIN_LOOP_H
+#ifndef CGDB_MAIN_LOOP_H
+#define CGDB_MAIN_LOOP_H
 
 #include <map>
 
