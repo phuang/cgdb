@@ -76,10 +76,6 @@ Process* Process::Execute(const char* cmdline) {
     return new Process(pid, fdin[1], fdout[0], fderr[0]);
   } else {
     // Child process
-    close(fdin[1]);
-    close(fdout[0]);
-    close(fderr[0]);
-
     for (int i = 0; i < 255; i++) {
       if (i != fdin[0] && i != fdout[1] && i != fderr[1])
         close(i);
